@@ -23,7 +23,9 @@ jobs:
         run: chmod +x gradlew
 
       - name: Thực thi JUnit Test với Gradle
-        run: ./gradlew test       - name: Đóng gói tệp JAR với Gradle
+        run: ./gradlew test
+
+      - name: Đóng gói tệp JAR với Gradle
         run: ./gradlew bootJar
 
       - name: Lưu trữ thành phẩm JAR Artifact
